@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int c, d;
+     printf("Enter the value of C: ");
+     scanf("%d", &c);
+     printf("Enter the value of D: ");
+     scanf("%d", &d);
+     c = c+d; 
+     d = c-d; 
+     c = c-d; 
+     printf("\n The value of c is: %d", c);
+     printf("\n The value of d is: %d", d);
+}
