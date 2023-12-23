@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Declare variables
+    double t, v, wcf;
+
+    // Input temperature and wind velocity
+    printf("Enter temperature (in Celsius): ");
+    scanf("%lf", &t);
+
+    printf("Enter wind velocity (in meters per second): ");
+    scanf("%lf", &v);
+
+    // Calculate wind chill factor
+    wcf = 35.74 + 0.6215 * t + (0.4275 * t - 35.75) * pow(v, 0.16);
+
+    // Display the result
+    printf("Wind Chill Factor: %.2lf\n", wcf);
+
+    return 0;
+}
